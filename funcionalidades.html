@@ -1,0 +1,57 @@
+<h1>Mi calculadora</h1>
+    <h3>Suma</h3>
+    <input id="sumando1" type="number">
+    <input id="sumando2" type="number">
+    <button onClick="sumar()">Sumar</button>
+    <h4>Resultado:</h4>
+    <p id="resultadoSuma"></p>
+
+
+    <h3>Resta</h3>
+    <input id="minuendo1" type="number">
+    <input id="minuendo2" type="number">
+    <button onClick="restar()">restar</button>
+    <h4>Resultado:</h4>
+    <p id="resultadoResta"></p>
+
+    <h3>Multiplicación</h3>
+    <input id="multiplicar1" type=number>
+    <input id="multiplicar2" type=number>
+    <button onClick="multiplicar()">multiplicar</button>
+    <h4>Resultado:</h4>
+    <p id="Producto"></p>
+    <h3>División</h3>
+
+    <input id="diviendo" type=number>
+    <input id="divisor" type=number>
+    <button onClick="dividir()">dividir</button>
+    <h4>Resultado:</h4>
+    <p id="resultadoDivision"></p>
+    <script>
+
+        function sumar() {
+            var sumando1 = document.getElementById("sumando1").value;
+            var sumando2 = document.getElementById("sumando2").value;
+            var suma = parseInt(sumando1) + parseInt(sumando2);
+            document.getElementById("resultadoSuma").innerHTML = suma;
+        }
+        function restar() {
+            var restar1 = document.getElementById("minuendo1").value;
+            var restar2 = document.getElementById("minuendo2").value;
+            var resta = parseInt(restar1) - parseInt(restar2);
+            document.getElementById("resultadoResta").innerHTML = resta;
+
+        }
+        function multiplicar() {
+            var multiplicar1 = document.getElementById("multiplicar1").value;
+            var multiplicar2 = document.getElementById("multiplicar2").value;
+            var multiplicar = parseInt(multiplicar1) * parseInt(multiplicar2);
+            document.getElementById("Producto").innerHTML = multiplicar;
+        }
+        function dividir() {
+            var dividir1 = document.getElementById("diviendo").value;
+            var dividir2 = document.getElementById("divisor").value;
+            var dividir = parseInt(dividir1) / parseInt(dividir2);
+            document.getElementById("resultadoDivision").innerHTML = dividir;
+        }
+    </script>
